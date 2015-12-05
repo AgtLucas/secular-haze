@@ -3,6 +3,17 @@ import http from 'http';
 
 const app = express();
 
+const routes = {
+  path: '',
+  component: AppComponent,
+  childRoutes: [
+    {
+      path: '/',
+      component: IndexComponent
+    }
+  ]
+}
+
 app.use(express.static('public'));
 
 app.set('view engine', 'ejs');
