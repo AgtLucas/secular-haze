@@ -11,3 +11,5 @@ const routes = {
     }
   ]
 }
+
+export { routes };

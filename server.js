@@ -3,6 +3,7 @@ import React from 'react';
 import { renderToString } from 'react-dom/server';
 import { match, RoutingContext } from 'react-router';
 import http from 'http';
+import { routes } from './routes';
 
 const app = express();
 
