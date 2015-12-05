@@ -1,4 +1,11 @@
 import express from 'express';
+import React from 'react';
+import { renderToString } from 'react-dom/server';
+import { match, RoutingContext } from 'react-router';
+
+import AppComponent from './components/app';
+import IndexComponent from './components/index';
+
 import http from 'http';
 
 const app = express();
